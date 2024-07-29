@@ -1,0 +1,15 @@
+class Solution {
+    public int numberOfSpecialChars(String word) {
+        char inc='A';
+        int ans=0;
+        for(char i='a';i<='z';i++){
+            if(word.contains(String.valueOf(i))){
+                if(word.contains(String.valueOf(inc))){
+                        ans++;
+                }
+            }
+            inc++;
+        }
+        return ans;
+    }
+}
